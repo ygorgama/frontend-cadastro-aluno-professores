@@ -42,4 +42,10 @@
         @apply text-gray-700 font-semibold;
     }
 
+    body {
+        @apply bg-green-300/50;
+    }
+
+
+
 }

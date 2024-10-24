@@ -11,8 +11,8 @@ const Navigation = () => {
                         <span>Logo</span>
                         <nav>
                             <ul className="flex">
-                                <li><NavLink to={"/alunos"} className={`mr-4 navigation-link`}>Students</NavLink></li>
-                                <li><NavLink to={"/professores"} className={`mr-4 navigation-link`}>Teachers</NavLink></li>
+                                <li><NavLink to={"/students"} className={`mr-4 navigation-link`}>Students</NavLink></li>
+                                <li><NavLink to={"/teachers"} className={`mr-4 navigation-link`}>Teachers</NavLink></li>
                                 <li><NavLink to={"/rooms"} className={`mr-4 navigation-link`}>Rooms</NavLink></li>
                                 <li><NavLink to={"/register-user"} className={'navigation-link'}>Register User</NavLink></li>
                             </ul>

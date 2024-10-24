@@ -2,7 +2,7 @@ import BoxNavigation from "../Components/BoxNavigation/BoxNavigation";
 
 const HomePage = () => {
     return (
-        <div className="bg-green-300/50 w-full h-screen">
+        <div className="">
             <div  className="p-4"> 
                 <section >
                     <div >

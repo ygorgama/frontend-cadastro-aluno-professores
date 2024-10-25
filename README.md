@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# FRONT-END API CADASTRO PROFESSORES E ALUNOS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Techs
 
-Currently, two official plugins are available:
+| Name | Version | 
+-------|----------
+| React           | 18.3.1        |
+| TypeScript      | 5.6.2         | 
+| Vite            | 5.4.9         |
+| Tailwind        | 3.4.14        |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About this project
 
-## Expanding the ESLint configuration
+This  project is the front-end of the application [api-cadastro-alunos-professores](https://github.com/ygorgama/api-cadastro-alunos-professores), that API register teacher, students and rooms.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**OBS:** This projects is not finished it will pass through some changes in design and UI/UX
 
-- Configure the top-level `parserOptions` property like this:
+## Start the project
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**OBS:** If you are running this project I will assume that you alredy saw and is running  the [api-cadastro-alunos-professores](https://github.com/ygorgama/api-cadastro-alunos-professores) project, if not go on and running this api, another import thing is if you change the PORT or are the api with other IP, you will  need to change the proxy on the vite.config.ts and package.json
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**npm install** (Install the project npm packets)
+**npm run dev** (Run the project on development mode)

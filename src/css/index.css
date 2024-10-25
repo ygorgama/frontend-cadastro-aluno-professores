@@ -42,10 +42,24 @@
         @apply text-gray-700 font-semibold;
     }
 
+    .navigation-link:hover {
+        @apply text-gray-900;
+    }
+
     body {
         @apply bg-green-300/50;
     }
 
+    td {
+        @apply bg-slate-500/50;
+        @apply py-3;
+        @apply px-5;
+    }
 
+    .link-id {
+        @apply text-blue-500;
+        @apply font-semibold;
+        @apply text-lg
+    }
 
 }

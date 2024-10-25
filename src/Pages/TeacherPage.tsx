@@ -48,10 +48,10 @@ export default function TeacherPage() {
                         <>
                             {teachers.map(teacher => (
                                 <tr key={teacher.id}>
-                                    <td className="border border-slate-500 bg-slate-500/50 py-3 px-5">{teacher.name}</td>
-                                    <td className="border border-slate-500 bg-slate-500/50 py-3 px-5">{teacher.room.id}</td>
-                                    <td className="border border-slate-500 bg-slate-500/50 py-3 px-5">{teacher.cpf}</td>
-                                    <td className="border border-slate-500 bg-slate-500/50 py-3 px-5"><Link to={`${teacher.id}`} className="btn">Edit</Link></td>
+                                    <td >{teacher.name}</td>
+                                    <td >{teacher.room.id}</td>
+                                    <td >{teacher.cpf}</td>
+                                    <td ><Link to={`${teacher.id}`} className="btn link-id">Edit</Link></td>
                                 </tr>
                             ))}
                         </>

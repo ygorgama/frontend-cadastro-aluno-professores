@@ -11,8 +11,13 @@ import RoomPage from "./Pages/RoomPage";
 import RoomCreatePage from "./Pages/RoomCreatePage";
 import {action as createRoomAction} from './Pages/SubmitRoom';
 import {action as registerTeacherAction} from './Pages/SubmitTeacher';
+import {action as registerStudensAction} from './Pages/SubmitStudent';
 import TeacherPage from "./Pages/TeacherPage";
 import CreateTeacherPage from "./Pages/CreateTeacherPage";
+import StudentsPage from "./Pages/StudentsPage";
+import CreateStudentPage from "./Pages/CreateStudentsPage";
+import StudentPage from "./Pages/StudentPage";
+import {action as updateStudend} from "./Pages/UpdateStudent";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +36,11 @@ const router = createBrowserRouter([
           {path: 'create', element: <CreateTeacherPage />, action: registerTeacherAction}
         ]
       },
+      {path: "/students", loader: authLoader, children: [
+        {path: '', element: <StudentsPage />},
+        {path: 'create', element: <CreateStudentPage />, action: registerStudensAction},
+        {path: ':id', element: <StudentPage />, action: updateStudend}
+      ]},
     ]
   },
 ]);

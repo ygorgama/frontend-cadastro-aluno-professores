@@ -5,12 +5,12 @@ export interface Props {
 
 export default function TableTemplate({headers, children}: Props){
     return (
-        <table className="table-fixed border-collapse border-slate-500 mt-4">
-            <thead>
+        <table className="table-fixed  mt-4 text-center w-full">
+            <thead className="border-collapse border border-slate-500">
                 <tr>
                     {
                         headers.map(header => (
-                            <th className="border border-slate-600 bg-slate-600/50 py-3 px-5" key={header}>{header}</th>
+                            <th className="bg-slate-600/50 py-3 px-5" key={header}>{header}</th>
                         ))
                     }
                 </tr>
